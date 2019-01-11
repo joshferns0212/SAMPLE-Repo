@@ -26,7 +26,6 @@ int main()
         cout << num;
         break;
     }
-    
 
 
 
