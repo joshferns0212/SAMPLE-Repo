@@ -13,21 +13,19 @@ int main()
 
     switch (num)
     {
-       case 1:
+    case 1:
         cout << num;
         break;
-       case 2:
+    case 2:
         cout << num;
         break;
-       case 3:
+    case 3:
         cout << num;
         break;
-       case 4:
+    case 4:
         cout << num;
         break;
     }
-
-
 
     return 0;
 }
