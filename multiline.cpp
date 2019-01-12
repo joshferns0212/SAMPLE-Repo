@@ -27,5 +27,17 @@ int main()
         break;
     }
 
+    int i[] = {1,2,3,4,5};
+    
+    
+    
+    for(int n : i)
+    {
+        cout << n;
+    }
+    
+    
+    
+    
     return 0;
 }
