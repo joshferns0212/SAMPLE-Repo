@@ -4,12 +4,47 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "Run Python",
+            "label": "Python",
             "type": "shell",
-            "command": "C:\\Users\\joshf\\AppData\\Local\\Programs\\Python\\Python37-32\\pythonw.exe ",
-            "group": {
-                "kind": "build",
-                "isDefault": true
+            "command": "python ${fileBasename}",
+            "group": "build",
+            "problemMatcher": [],
+            "presentation":
+            {
+                "focus": true,
+                "showReuseMessage": false,
+                "clear": true
+            }
+        },
+        {
+            "label": "C++",
+            "type": "shell",
+            "command": "${fileBasenameNoExtension}",
+            "dependsOn": 
+            [
+                "Compile C++"
+            ],
+            "problemMatcher": 
+            [
+                "$gcc"
+            ],
+            "group": "build",
+            "presentation":
+            {
+                "echo": false,
+                "showReuseMessage": false,
+                "focus": true
+            }
+        },
+        {
+            "label": "Compile C++",
+            "type": "shell",
+            "command": "g++ -o ${fileBasenameNoExtension} ${fileBasename}",
+            "presentation":
+            {
+                "reveal": "never",
+                "showReuseMessage": false,
+                "clear": true
             }
         }
     ]
