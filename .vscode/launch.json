@@ -6,6 +6,18 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - SwingControlDemo",
+            "request": "launch",
+            "mainClass": "SwingControlDemo"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - SwingTest",
+            "request": "launch",
+            "mainClass": "SwingTest"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Test",
             "request": "launch",
             "mainClass": "Test"

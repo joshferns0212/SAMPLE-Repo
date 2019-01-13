@@ -48,4 +48,32 @@
             }
         }
     ]
+    {
+        "label": "Java",
+        "type": "shell",
+        "command": "java ${fileBasenameNoExtension}",
+        "dependsOn": 
+        [
+            "Compile Java"
+        ],
+        "group": "build",
+        "presentation":
+        {
+            "echo": false,
+            "showReuseMessage": false,
+            "focus": true
+        }
+    },
+    {
+        "label": "Compile Java",
+        "type": "shell",
+        "command": "javac ${fileBasename}",
+        "presentation":
+        {
+            "reveal": "never",
+            "showReuseMessage": false,
+            "clear": true
+        }
+    }
+]
 }
