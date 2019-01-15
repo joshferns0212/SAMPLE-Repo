@@ -54,7 +54,8 @@
                 "echo": false,
                 "showReuseMessage": false,
                 "focus": true
-            }
+            },
+            "problemMatcher": []
         },
         {
             "label": "Compile Java",
@@ -65,6 +66,6 @@
                 "showReuseMessage": false,
                 "clear": true
             }
-        },
+        }
     ]
 }
